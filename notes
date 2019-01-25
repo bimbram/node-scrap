@@ -1,12 +1,30 @@
+Lesson 7. The Request library method
+-What it is doing?
+1. The simplest way of doing HTTP(s) requests
+2. You can send GET, POST, PUT, DELETE, and more types of requests
+3. Supports HTTP Basic Auth, Gzip, multipart-data post, custom headers, file streaming.. And a lot more
+
+-Pro's & Con's
+1. PRO - You control each request and every parameter
+2. PRO - Very fast (compared to a headless browser)
+3. CON - It can get messy if not done right
+4. CON - You could potentially write more code (compared to a headless browser)
+
+-When to use it?
+1. Is API based
+2. Has basic authentication
+3. Is NOT dynamically rendered
+4. Downloading files
+
+Lesson 6. Running with Terminal CMD & Basics on VSCode Debugger
+-Just a simple instruction how to debug in VSCode
+
 Lesson 5. The biggest problem with scraping
 -Maintenance & Stability
 1. Everything work fine until it doesn't, it can work for one day then it can fail (because the website can change)
 
 -How can you solve this?
 1. You can't, you need to debug and fix it
-
-
-
 
 Lesson 4. Why & When to Choose Scraping
 -Why we want to scrape a website?
