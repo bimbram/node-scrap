@@ -23,8 +23,20 @@ const URL = "https://www.imdb.com/title/tt0468569/?ref_=nv_sr_1";
   });
   let $ = cheerio.load(response);
 
-  let title = $('div[class="title_wrapper"] > h1').text();
+  let title = $('div[class="title_wrapper"] > h1').text().trim();
   let rating = $('span[itemprop="ratingValue"]').text();
-  console.log(title);
-  console.log(rating);
+  let poster = $('div[class="poster"] > a > img').attr('src')
+  let totalRatings = $('div[class="imdbRating"] > a').text()
+  let releaseDate = $('a[title="See more release dates"]').text().trim();
+  let genres = [];
+  $('div[class="subtext"] a[href^="/search/title?"]').each((i, elm) => {
+	   let genre = $(elm).text()
+	genres.push(genre);
+})
+  console.log(`title: ${title}, ${rating}, ${poster}, ${totalRatings}, ${releaseDate}`);
+  console.log(`rating: ${rating}`);
+  console.log(`poster: ${poster}`);
+  console.log(`total ratings: ${totalRatings}`);
+  console.log(`release date: ${releaseDate}`);
+  console.log(`genres: ${genres}`);
 })();
