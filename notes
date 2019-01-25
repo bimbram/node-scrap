@@ -1,3 +1,13 @@
+Lesson 5. The biggest problem with scraping
+-Maintenance & Stability
+1. Everything work fine until it doesn't, it can work for one day then it can fail (because the website can change)
+
+-How can you solve this?
+1. You can't, you need to debug and fix it
+
+
+
+
 Lesson 4. Why & When to Choose Scraping
 -Why we want to scrape a website?
 1. It can be more convenient
