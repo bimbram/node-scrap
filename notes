@@ -1,1 +1,19 @@
+Lesson 4. Why & When to Choose Scraping
+-Why we want to scrape a website?
+1. It can be more convenient
+2. You could get more data out
+3. You do not have an official api
+4. You have a shitty official api
+
+-When to scrape a website?
+1. The website does not specifically say that it is not ok to scrape it
+2. You get permission from the owner of the website / company
+
+-Advice & Conclusion
+1. Respect the ToS (terms of service) of the website that you want to scrape
+2. Use the official API's where possible
+3. Do not over do it, make sure to not bombard their website with request
+4. Seek legal advice from a lawyer if you want to be 100% sure about a website, in case you want to be serious and you rely on that data
+
 Lesson 3. Writing a Simple IMDB Scraper
+-Finished creating the project
