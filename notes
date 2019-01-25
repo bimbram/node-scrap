@@ -1,5 +1,8 @@
-Lesson 9. 01 - How to spoof add custom request headers
+Lesson 10. 02 - Deal with GZIP Compression enabled websites
+-How to deal with GZIP compression
 
+Lesson 9. 01 - How to spoof add custom request headers
+-Disguising our request so that the targeted website won't know that we actually doing the request from a scraper, not through a browser
 
 Lesson 8. The Browser Automation method
 -What is browser automation
