@@ -1,3 +1,32 @@
+Lesson 8. The Browser Automation method
+-What is browser automation
+1. Controlling a browser with code instead of human live interaction can be named as browser automation
+
+-PRO's & CON's
+1. PRO: Easy to understand
+2. PRO: Easy to write code
+3. PRO: Less code than the request method
+4. CON: limitations on the browser engine you use
+5. CON: slower than Request method
+
+-Examples
+1. node-horseman
+2. puppeteer (recommended!)
+3. NightmareJs (based on Electron browser)
+
+-When to use it?
+1. When network resources/bandwidth don't matter
+2. When website renders dynamically
+3. When being super fast does not matter
+4. When you want to build something fast and easy
+5. When you don't want to deal that much with network inspection
+
+-More info
+1. You can disable the browser headless and you can actually inspect what happens with it live
+2. You can simulate almost every action a human can do in a browser
+3. You can screenshot pages / create pdf's
+4. You can manipulate the dom, inject code and scrape!
+
 Lesson 7. The Request library method
 -What it is doing?
 1. The simplest way of doing HTTP(s) requests
