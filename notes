@@ -1,5 +1,9 @@
+Lesson 13. 05 - Exporting data to CSV
+-Using json2csv library to make our scraped data into a csv file
+
 Lesson 12. 04 - Multiple Movies & Saving JSON to File
--
+-Adding more than one link to our simple imdb scraper
+-Writing the scraping result into a json file using fs module
 
 Lesson 11. 03 - Selectors & More Parsing
 -Select more element in our imdb scraper program

@@ -1,7 +1,7 @@
 const request = require("request-promise");
 const cheerio = require("cheerio");
 const fs = require('fs');
-
+const Json2csvParser = require('json2csv').Parser;
 
 const URLS = [
   "https://www.imdb.com/title/tt0468569/?ref_=nv_sr_1",
@@ -55,10 +55,15 @@ const URLS = [
     });
   }
 
-  fs.writeFileSync('./data.json', JSON.stringify(moviesData), 'utf-8');
+  const fields = ['title', 'rating', 'poster']
+
+  const json2csvParser = new Json2csvParser({fields});
+  const csv = json2csvParser.parse(moviesData);
+
+  fs.writeFileSync('./data.csv', csv, 'utf-8');
 
 
-  console.log(moviesData);
+  console.log(csv);
 
 
 })();
